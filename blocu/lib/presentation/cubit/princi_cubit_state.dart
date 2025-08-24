@@ -11,7 +11,8 @@ sealed class PrinciCubitState extends Equatable {
 class PrinciInitial extends PrinciCubitState {}
 class PrinciLoading extends PrinciCubitState{}
 class PrinciSucces extends PrinciCubitState{
-  final List<Object> materias;
+  final List<String> materias;
+
   PrinciSucces(this.materias);
   @override
   List<Object> get props => [materias];
