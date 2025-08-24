@@ -1,4 +1,10 @@
 part of 'princi_bloc_bloc.dart';
 
-@immutable
-sealed class PrinciBlocEvent {}
+
+sealed class PrinciBlocEvent extends Equatable {
+
+  @override
+  List<Object> get props => [];
+}
+
+class Cargarprofe extends PrinciBlocEvent{}
